@@ -13,7 +13,7 @@ Serve the `dist` folder with any static web server, for example `python3 -m http
 3. Choose the **Other** framework preset. Leave the build command empty and set the output directory to **dist**. No install command or environment variables are needed.
 4. Deploy. The included `vercel.json` specifies the output directory and clean URLs.
 
-If uploading the ZIP, extract it first and use the `line-and-wine` folder as the repository root. This project has not been pushed to GitHub or deployed to Vercel.
+If uploading the ZIP, extract it first and use the `line-and-wine` folder as the repository root. This ZIP is a source export; creating it does not update GitHub or Vercel.
 
 ## Pages
 
@@ -32,15 +32,15 @@ WhatsApp: 074 898 5679 (international link: +27 74 898 5679)
 
 All contact actions open the visitor's email app or WhatsApp. There is no form or stored customer information.
 
-## Replace the images
+## Photos and latest updates
 
-The two dance images are AI-generated illustrative placeholders, not photographs of Line & Wine members. Replace `dist/assets/community.jpg` and `dist/assets/steps.jpg` with your own photographs using the same filenames. Wide landscape photos work best. Update alt text and remove illustrative captions once real photographs are added.
+Includes Michelle's and Allison's portraits, three supplied community photos, the updated homepage and Our Story imagery, and the real-photo gallery. Footer buttons say “WhatsApp” on all five pages.
 
-Founder photo spaces are in `dist/our-story.html`, inside the two `portrait-placeholder` elements. Replace each inner span and small label with an image of the correct founder, add a descriptive alt attribute, and style the image to fill the existing portrait area (`width:100%;height:100%;object-fit:cover;border-radius:inherit`).
+All image files are included in `dist/assets`. The original `community.jpg` and `steps.jpg` are illustrative images; see IMAGE-NOTES.md. Founder portraits use top alignment, and new community photographs retain their full composition.
 
-Add real gallery entries in `dist/gallery.html` by copying an existing `gallery-item` button and updating the image path, alt text, `data-caption`, and `data-category`. Categories are `dancing` and `together`.
+Edit gallery entries in `dist/gallery.html` using the existing `gallery-item` buttons, image paths, alt text, captions and categories.
 
-Class schedules, exact venues, fees, and event dates were not supplied. Visitors are directed to Michelle for current details.
+Class schedules, exact venues, fees and event dates are handled through the site's contact links.
 
 ## Design and accessibility
 
