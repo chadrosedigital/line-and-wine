@@ -13,7 +13,11 @@ Serve the `dist` folder with any static web server, for example `python3 -m http
 3. Choose the **Other** framework preset. Leave the build command empty and set the output directory to **dist**. No install command or environment variables are needed.
 4. Deploy. The included `vercel.json` specifies the output directory and clean URLs.
 
-If uploading the ZIP, extract it first and use the `line-and-wine` folder as the repository root. This ZIP is a source export; creating it does not update GitHub or Vercel.
+Extract the ZIP first. Upload the contents of the `line-and-wine` folder, not the ZIP itself, to GitHub. The repository root must contain `dist/`, `vercel.json`, and this README. In Vercel leave Root Directory at the repository root. For an existing repository, replace the corresponding files and add all assets.
+
+This export includes the latest real community photographs and the Facebook footer link on all five pages. It is ready for upload; creating this ZIP does not push to GitHub or deploy to Vercel.
+
+Vercel settings are included in `vercel.json`: Framework **Other**, Output Directory **dist**, and no build or install commands. No environment variables are required. See [Vercel configuration documentation](https://vercel.com/docs/project-configuration/vercel-json).
 
 ## Pages
 
@@ -32,15 +36,11 @@ WhatsApp: 074 898 5679 (international link: +27 74 898 5679)
 
 All contact actions open the visitor's email app or WhatsApp. There is no form or stored customer information.
 
-## Photos and latest updates
+## Photographs
 
-Includes Michelle's and Allison's portraits, three supplied community photos, the updated homepage and Our Story imagery, and the real-photo gallery. Footer buttons say “WhatsApp” on all five pages.
+The site uses real Line & Wine photographs, including eight owner-supplied community photos added in October 2026. Home, classes, and events feature relevant photos; all eight are also included in the filterable gallery. Image proportions are preserved so group members remain visible. See `IMAGE-NOTES.md` for placement details.
 
-All image files are included in `dist/assets`. The original `community.jpg` and `steps.jpg` are illustrative images; see IMAGE-NOTES.md. Founder portraits use top alignment, and new community photographs retain their full composition.
-
-Edit gallery entries in `dist/gallery.html` using the existing `gallery-item` buttons, image paths, alt text, captions and categories.
-
-Class schedules, exact venues, fees and event dates are handled through the site's contact links.
+Class schedules, exact venues, fees, and event dates were not supplied. Visitors are directed to Michelle for current details.
 
 ## Design and accessibility
 

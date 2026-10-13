@@ -16,3 +16,11 @@
 .community-gallery .gallery-item,.community-gallery .gallery-item.tall{height:auto}
 .community-gallery .gallery-item img{height:auto;object-fit:contain}
 .community-gallery .gallery-item:hover img{transform:none}
+
+/* Keep the full group visible in the real community photographs. */
+.hero-visual .image-frame{border-radius:6px}
+.hero-visual .image-frame img,.event-image img,.class-image{height:auto;object-fit:contain}
+.event-image img{border-radius:6px}
+
+footer>div:not(.footer-bottom){flex-wrap:wrap;row-gap:10px}
+footer>div:not(.footer-bottom)>a{white-space:nowrap}
