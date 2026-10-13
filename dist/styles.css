@@ -80,3 +80,21 @@ footer>div:not(.footer-bottom)>a{white-space:nowrap}
   .hero .actions .button, .contact .actions .button { justify-content: space-between; }
   .contact h2 { font-size: 44px; }
 }
+
+/* Seamless left-scrolling community banner. */
+.ribbon { padding: 0; gap: 0; flex-wrap: nowrap; }
+.ribbon > .ribbon-window { display: block; flex: 1; min-width: 0; overflow: hidden; }
+.ribbon-track { display: flex; width: max-content; animation: ribbon-scroll 32s linear infinite; }
+.ribbon-group { display: flex; flex: 0 0 auto; min-width: 100vw; align-items: center; justify-content: space-around; gap: 32px; padding: 21px 16px; }
+.ribbon-group > * { flex-shrink: 0; }
+.ribbon > .ribbon-toggle { display: block; flex: 0 0 60px; align-self: stretch; border: 0; border-left: 1px solid #612c3d25; background: transparent; color: var(--wine); font-size: 11px; min-height: 44px; padding: 8px; }
+.ribbon.is-paused .ribbon-track { animation-play-state: paused; }
+@keyframes ribbon-scroll { to { transform: translateX(-50%); } }
+@media (max-width: 600px) {
+  .ribbon-group { gap: 36px; padding: 16px 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ribbon-track { animation: none; width: 100%; }
+  .ribbon-group { min-width: 0; width: 100%; flex-wrap: wrap; gap: 16px 24px; }
+  .ribbon-group[aria-hidden="true"], .ribbon > .ribbon-toggle { display: none; }
+}
