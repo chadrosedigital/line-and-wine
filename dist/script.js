@@ -50,13 +50,3 @@ dialog.addEventListener('click', event => {
     if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
   }
 });
-
-const ribbonToggle = document.querySelector('.ribbon-toggle');
-if (ribbonToggle) {
-  ribbonToggle.addEventListener('click', () => {
-    const paused = ribbonToggle.closest('.ribbon').classList.toggle('is-paused');
-    ribbonToggle.setAttribute('aria-pressed', String(paused));
-    ribbonToggle.setAttribute('aria-label', paused ? 'Play scrolling banner' : 'Pause scrolling banner');
-    ribbonToggle.textContent = paused ? 'Play' : 'Pause';
-  });
-}
