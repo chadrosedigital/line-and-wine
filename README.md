@@ -45,3 +45,7 @@ Class schedules, exact venues, fees, and event dates were not supplied. Visitors
 ## Design and accessibility
 
 Cream, wine, coral, sage, and warm yellow. Responsive layouts, mobile navigation, visible keyboard focus, native FAQ disclosures, labelled gallery filters, keyboard-dismissible image dialog, and reduced-motion support. Google Fonts loads DM Sans and Playfair Display; system fallbacks work if unavailable. All imagery is stored locally.
+
+## Mobile layout update
+
+Phone layouts up to 600px hide decorative symbols, use plain text arrows, and provide separate space for photo captions and clearer heading, button, and footer spacing. Desktop styling is preserved.
